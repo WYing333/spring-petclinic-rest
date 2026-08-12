@@ -47,3 +47,5 @@ public class BaseEntity {
     }
 
 }
+
+// touch: doc note
