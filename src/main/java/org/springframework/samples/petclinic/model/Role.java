@@ -37,3 +37,5 @@ public class Role extends BaseEntity {
         this.name = name;
     }
 }
+
+// touch: doc note
