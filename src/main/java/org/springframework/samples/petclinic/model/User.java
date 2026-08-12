@@ -72,3 +72,5 @@ public class User {
         this.roles.add(role);
     }
 }
+
+// touch: doc note
