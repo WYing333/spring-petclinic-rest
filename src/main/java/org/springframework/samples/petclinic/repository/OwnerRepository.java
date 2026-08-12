@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 package org.springframework.samples.petclinic.repository;
+import org.springframework.samples.petclinic.rest.controller.v1.VetRestControllerV1;
 
 import java.util.Collection;
 
