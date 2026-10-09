@@ -52,11 +52,10 @@ public class SwaggerConfig {
     }
 
     private Contact swaggerContact() {
-        Contact petclinicContact = new Contact();
-        petclinicContact.setName("Vitaliy Fedoriv");
-        petclinicContact.setEmail("vitaliy.fedoriv@gmail.com");
-        petclinicContact.setUrl("https://github.com/spring-petclinic/spring-petclinic-rest");
-        return petclinicContact;
+        return new Contact()
+                .name("Vitaliy Fedoriv")
+                .email("vitaliy.fedoriv@gmail.com")
+                .url("https://github.com/spring-petclinic/spring-petclinic-rest");
     }
 
     private License swaggerLicense() {
