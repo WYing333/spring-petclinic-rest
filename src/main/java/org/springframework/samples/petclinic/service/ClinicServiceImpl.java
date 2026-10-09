@@ -65,7 +65,8 @@ public class ClinicServiceImpl implements ClinicService {
     @Override
     @Transactional(readOnly = true)
     public Collection<Pet> findAllPets() throws DataAccessException {
-        return petRepository.findAll();
+        Collection<Pet> pets = petRepository.findAll();
+        return pets;
     }
 
     @Override
