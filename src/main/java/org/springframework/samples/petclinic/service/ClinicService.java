@@ -37,7 +37,7 @@ import org.springframework.samples.petclinic.model.Visit;
  */
 public interface ClinicService {
 
-	Pet findPetById(int id) throws DataAccessException;
+	Pet findPet(int id) throws DataAccessException;
 	Collection<Pet> findAllPets() throws DataAccessException;
     Page<Pet> findPets(Pageable pageable) throws DataAccessException;
 	void savePet(Pet pet) throws DataAccessException;
