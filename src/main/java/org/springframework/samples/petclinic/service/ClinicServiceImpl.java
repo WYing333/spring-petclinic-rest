@@ -211,8 +211,10 @@ public class ClinicServiceImpl implements ClinicService {
 
     @Override
     @Transactional
-    public void savePet(Pet pet) throws DataAccessException {
-        pet.setType(findPetTypeById(pet.getType().getId()));
+    public void savePet(Pet pet, boolean refreshType) throws DataAccessException {
+        if (refreshType) {
+            pet.setType(findPetTypeById(pet.getType().getId()));
+        }
         petRepository.save(pet);
     }
 
